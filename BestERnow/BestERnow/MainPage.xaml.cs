@@ -12,6 +12,12 @@ namespace BestERnow
         public MainPage()
         {
             InitializeComponent();
+
+        }
+
+        private void BtnScan_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new NavigationPage(new Scan_Results()));
         }
     }
 }
